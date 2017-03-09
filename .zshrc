@@ -55,4 +55,3 @@ alias du="du -ch"
 wttr() {
 	curl www.wttr.in/$1
 }
-asgsdfgs
