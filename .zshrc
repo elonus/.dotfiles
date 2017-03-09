@@ -51,6 +51,9 @@ alias grep="grep --color=auto"
 alias df="df -h"
 alias du="du -ch"
 
+# Change default colors for ls
+eval "$(dircolors ~/.dircolors)";
+
 # wttr function
 wttr() {
 	curl www.wttr.in/$1
