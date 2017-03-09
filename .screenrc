@@ -2,3 +2,5 @@ hardstatus alwayslastline '%{= G}[ %{G}%H %{g}][%= %{= w}%?%-Lw%?%{= R}%n*%f %t%
 termcapinfo xterm* ti@:te@
 
 escape ^Jj
+term screen-256color
+defutf8 on
