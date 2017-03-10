@@ -58,3 +58,6 @@ eval "$(dircolors ~/.dircolors)";
 wttr() {
 	curl www.wttr.in/$1
 }
+
+# Reduce the keytimeout for vim keybindings from 0.4s to 0.1s
+export KEYTIMEOUT=1
