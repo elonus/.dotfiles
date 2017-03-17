@@ -60,4 +60,4 @@ wttr() {
 }
 
 # Reduce the keytimeout for vim keybindings from 0.4s to 0.1s
-export KEYTIMEOUT=1
+export KEYTIMEOUT=2
