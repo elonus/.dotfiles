@@ -66,5 +66,10 @@ set number
 
 filetype plugin on
 
+" vim-latexsuite
+filetype plugin indent on
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor = "latex"
+
 " Press esc to stop search highlight
 nnoremap <esc> :noh<return><esc>
