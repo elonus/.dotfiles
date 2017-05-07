@@ -16,7 +16,7 @@ exec "setxkbmap no"
 
 
 # Set the font for the bar
-font pango:DejaVu Sans Mono 8
+font pango:DejaVu Sans Mono 10
 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
