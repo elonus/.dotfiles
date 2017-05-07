@@ -73,3 +73,6 @@ let g:tex_flavor = "latex"
 
 " Press esc to stop search highlight
 nnoremap <esc> :noh<return><esc>
+
+" Set the default register to Primary Selection
+set clipboard=unnamed
