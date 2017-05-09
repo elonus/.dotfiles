@@ -50,6 +50,7 @@ alias scroff="xset dpms force off"
 alias grep="grep --color=auto"
 alias df="df -h"
 alias du="du -ch"
+alias mkdir="mkdir -p -v"
 
 # Change default colors for ls
 eval "$(dircolors ~/.dircolors)";
