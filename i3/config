@@ -147,7 +147,7 @@ bar {
 }
 
 # Add system mode for lock, suspend etc.
-set $Locker i3lock-fancy && sleep 1
+set $Locker i3lock && sleep 1
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
@@ -169,8 +169,8 @@ bindsym $mod+Pause mode "$mode_system"
 bindsym Print "exec spectacle"
 
 # Start programs on i3 startup
-exec --no-startup-id i3-msg 'workspace 1; exec st screen -RD; sleep 1'
-exec --no-startup-id i3-msg 'workspace 2; exec st mosh -p 41232 asgard; sleep 1'
+exec --no-startup-id i3-msg 'workspace 1; exec st screen -RD; sleep 2'
+exec --no-startup-id i3-msg 'workspace 2; exec st mosh -p 41232 asgard; sleep 2'
 exec --no-startup-id i3-msg 'workspace 3; exec palemoon'
 
 # Enable going back to last workspace when going to the current one
