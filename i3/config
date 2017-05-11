@@ -11,10 +11,6 @@
 
 set $mod Mod4
 
-# Set the keyboard layout to norwegian
-exec "setxkbmap no"
-
-
 # Set the font for the bar
 font pango:DejaVu Sans Mono 10
 
@@ -147,7 +143,7 @@ bar {
 }
 
 # Add system mode for lock, suspend etc.
-set $Locker i3lock && sleep 1
+set $Locker i3lock -k -B 5 --insidecolor=ffffffbf && sleep 1
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
