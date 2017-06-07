@@ -32,6 +32,9 @@ unsetopt autocd nomatch
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
+# Configure PATH
+export PATH=$PATH:$HOME/.bin
+
 # Add keybinding to go from vi-insert-mode to vi-cmd-mode
 bindkey 'jk' vi-cmd-mode
 bindkey 'kj' vi-cmd-mode
@@ -62,3 +65,11 @@ wttr() {
 
 # Reduce the keytimeout for vim keybindings from 0.4s to 0.1s
 export KEYTIMEOUT=2
+
+pbs() {
+	pbpst -S $1 | tee "$(tty)" | xclip
+}
+
+pbf() {
+	pbpst -Sf $1 | tee "$(tty)" | xclip
+}
