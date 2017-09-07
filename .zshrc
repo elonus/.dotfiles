@@ -76,3 +76,8 @@ pbs() {
 pbf() {
 	pbpst -Sf $1 | tee "$(tty)" | xclip
 }
+
+# Function to find which package owns a command
+owns() {
+	pacman -Fo $(which -p $1)
+}
