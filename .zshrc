@@ -54,6 +54,9 @@ alias grep="grep --color=auto"
 alias df="df -h"
 alias du="du -ch"
 alias mkdir="mkdir -p -v"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 
 # Change default colors for ls
 eval "$(dircolors ~/.dircolors)";
