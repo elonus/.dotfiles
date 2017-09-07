@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "Inconsolata-Regular:size=11";
+static char font[] = "Inconsolata-Regular:size=12";
 /*static char font[] = "DejaVu Sans Mono:size=10";*/
 
 static int borderpx = 2;
