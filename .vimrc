@@ -76,3 +76,6 @@ nnoremap <esc> :noh<return><esc>
 
 " Sets indendation options for switch statements
 set cinoptions=l1:0
+
+" Change the color scheme from default to elflord
+colorscheme elflord
