@@ -61,6 +61,9 @@ endif
 inoremap jk <esc>
 inoremap kj <esc>
 
+" Map space to :
+noremap <space> :
+
 " Add line numbers
 set number
 
