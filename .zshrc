@@ -36,8 +36,12 @@ bindkey -v
 export PATH=$PATH:$HOME/.bin
 
 # Add keybinding to go from vi-insert-mode to vi-cmd-mode
-bindkey 'jk' vi-cmd-mode
-bindkey 'kj' vi-cmd-mode
+bindkey 'hl' vi-cmd-mode
+bindkey 'lh' vi-cmd-mode
+
+# Searches backward/forward in history for what is in the line
+bindkey -M vicmd 'j' history-beginning-search-forward
+bindkey -M vicmd 'k' history-beginning-search-backward
 
 # Load prompt plugin
 autoload -Uz promptinit
@@ -58,6 +62,8 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias cal="cal -wm3"
+alias touch_on="xinput enable 9"   #Enable touchscreen
+alias touch_off="xinput disable 9" #Disable touchscreen
 
 # Change default colors for ls
 eval "$(dircolors ~/.dircolors)";
