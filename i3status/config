@@ -27,6 +27,11 @@ volume master {
 	mixer = "Master"
 }
 
+#wireless wlp4s0 {
+        #format_up = "W: (%quality at %essid) %ip"
+        #format_down = "W: down"
+#}
+
 wireless _first_ {
         format_up = "W: (%quality at %essid) %ip"
         format_down = "W: down"
