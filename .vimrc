@@ -58,8 +58,8 @@ if has('syntax') && has('eval')
 endif
 
 " Map jk and kj to escape
-inoremap jk <esc>
-inoremap kj <esc>
+inoremap hl <esc>
+inoremap lh <esc>
 
 " Map space to :
 noremap <space> :
@@ -82,3 +82,7 @@ set cinoptions=l1:0
 
 " Change the color scheme from default to elflord
 colorscheme elflord
+
+" Set encoding to be utf-8
+set encoding=utf-8
+set fileencoding=utf-8
