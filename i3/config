@@ -176,3 +176,6 @@ workspace_auto_back_and_forth yes
 
 # keepass auto type
 bindsym $mod+Shift+x exec "/usr/bin/keepass --auto-type"
+
+# Reconnect wpa_supplicant
+bindsym $mod+b exec "sudo /usr/bin/pkill -HUP wpa_supplicant"
