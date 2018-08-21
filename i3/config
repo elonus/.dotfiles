@@ -145,7 +145,7 @@ bar {
 # Add system mode for lock, suspend etc.
 set $Locker i3lock -k -B 5 --insidecolor=ffffffbf && sleep 1
 
-set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown, (o) screen off
 mode "$mode_system" {
     bindsym l exec --no-startup-id $Locker, mode "default"
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
@@ -153,6 +153,7 @@ mode "$mode_system" {
     bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
     bindsym r exec --no-startup-id systemctl reboot, mode "default"
     bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"  
+    bindsym o exec --no-startup-id xset dpms force off, mode "default"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
@@ -169,7 +170,7 @@ exec --no-startup-id i3-msg 'workspace 1; exec st screen -RD; sleep 4'
 exec --no-startup-id i3-msg 'workspace 2; exec st mosh -p 41232 asgard; sleep 4'
 exec --no-startup-id i3-msg 'workspace 3; exec palemoon'
 
-exec --no-startup-id redshift-gtk
+exec --no-startup-id redshift-gtk -l 60.2:10.52
 
 # Enable going back to last workspace when going to the current one
 workspace_auto_back_and_forth yes
