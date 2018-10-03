@@ -86,3 +86,8 @@ colorscheme elflord
 " Set encoding to be utf-8
 set encoding=utf-8
 set fileencoding=utf-8
+
+" Set search to be case insensitive by default, but change to case sensitive
+" when a capital is typed in the search
+set ignorecase
+set smartcase
