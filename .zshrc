@@ -52,6 +52,7 @@ prompt adam2
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias ls="ls --color=auto"
+alias ll="ls -l"
 alias pacman="pacman --color=auto"
 alias scroff="xset dpms force off"
 alias grep="grep --color=auto"
