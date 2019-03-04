@@ -75,7 +75,7 @@ wttr() {
 }
 
 # Reduce the keytimeout for vim keybindings from 0.4s to 0.1s
-export KEYTIMEOUT=2
+export KEYTIMEOUT=4
 
 pbs() {
 	pbpst -S $1 | tee "$(tty)" | xclip
