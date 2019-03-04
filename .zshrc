@@ -89,3 +89,6 @@ pbf() {
 owns() {
 	pacman -Fo $(which -p $1)
 }
+
+# Make left ctrl escape when pressed and ctrl when holding it
+xcape -t 150
