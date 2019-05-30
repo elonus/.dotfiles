@@ -36,8 +36,8 @@ bindkey -v
 export PATH=$PATH:$HOME/.bin
 
 # Add keybinding to go from vi-insert-mode to vi-cmd-mode
-bindkey 'hl' vi-cmd-mode
-bindkey 'lh' vi-cmd-mode
+#bindkey 'hl' vi-cmd-mode
+#bindkey 'lh' vi-cmd-mode
 
 # Searches backward/forward in history for what is in the line
 bindkey -M vicmd 'j' history-beginning-search-forward
@@ -75,7 +75,7 @@ wttr() {
 }
 
 # Reduce the keytimeout for vim keybindings from 0.4s to 0.1s
-export KEYTIMEOUT=2
+export KEYTIMEOUT=4
 
 pbs() {
 	pbpst -S $1 | tee "$(tty)" | xclip
