@@ -36,8 +36,8 @@ bindkey -v
 export PATH=$PATH:$HOME/.bin
 
 # Add keybinding to go from vi-insert-mode to vi-cmd-mode
-bindkey 'hl' vi-cmd-mode
-bindkey 'lh' vi-cmd-mode
+#bindkey 'hl' vi-cmd-mode
+#bindkey 'lh' vi-cmd-mode
 
 # Searches backward/forward in history for what is in the line
 bindkey -M vicmd 'j' history-beginning-search-forward
