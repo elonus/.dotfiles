@@ -140,6 +140,8 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 	position top
+
+	font pango:DejaVu Sans Mono, Awesome 10
 }
 
 # Add system mode for lock, suspend etc.
@@ -167,7 +169,7 @@ bindsym Print "exec spectacle"
 
 # Start programs on i3 startup
 exec --no-startup-id i3-msg 'workspace 1; exec st screen -RD; sleep 4'
-exec --no-startup-id i3-msg 'workspace 2; exec st mosh -p 41232 asgard; sleep 4'
+exec --no-startup-id i3-msg 'workspace 2; exec st mosh -p 41232 muspelheim; sleep 4'
 exec --no-startup-id i3-msg 'workspace 3; exec palemoon'
 
 exec --no-startup-id redshift-gtk -l 60.2:10.52
@@ -180,3 +182,6 @@ bindsym $mod+Shift+x exec "/usr/bin/keepass --auto-type"
 
 # Reconnect wpa_supplicant
 bindsym $mod+b exec "sudo /usr/bin/pkill -HUP wpa_supplicant"
+
+# Make Control_L + L in Firefox mean F6
+#bindsym Control+l exec "keybind.py"
