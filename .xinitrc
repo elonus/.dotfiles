@@ -33,9 +33,10 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 export EDITOR=/usr/bin/vim
-export BROWSER=/usr/bin/palemoon
+export BROWSER=/usr/bin/firefox
 export TERMINAL=/usr/bin/st
 xbindkeys
+xinput disable 9
 setxkbmap -layout no -option compose:lctrl
 setxkbmap -layout no -option ctrl:nocaps
 xss-lock -- i3lock -k -B 5 --insidecolor=ffffffbf &
