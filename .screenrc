@@ -4,3 +4,4 @@ termcapinfo xterm* ti@:te@
 escape ^Jj
 term screen-256color
 defutf8 on
+defscrollback 400
