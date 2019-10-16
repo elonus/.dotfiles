@@ -34,6 +34,7 @@ bindkey -v
 
 # Configure PATH
 export PATH=$PATH:$HOME/.bin
+export PATH=$PATH:$HOME/.local/bin
 
 # Add keybinding to go from vi-insert-mode to vi-cmd-mode
 #bindkey 'hl' vi-cmd-mode
