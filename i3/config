@@ -171,6 +171,7 @@ bindsym Print "exec spectacle"
 exec --no-startup-id i3-msg 'workspace 1; exec st screen -RD; sleep 4'
 exec --no-startup-id i3-msg 'workspace 2; exec st mosh -p 41232 muspelheim; sleep 4'
 exec --no-startup-id i3-msg 'workspace 3; exec palemoon'
+exec --no-startup-id i3-msg 'workspace 3; exec firefox'
 
 exec --no-startup-id redshift-gtk -l 60.2:10.52
 
@@ -180,8 +181,14 @@ workspace_auto_back_and_forth yes
 # keepass auto type
 bindsym $mod+Shift+x exec "/usr/bin/keepass --auto-type"
 
-# Reconnect wpa_supplicant
-bindsym $mod+b exec "sudo /usr/bin/pkill -HUP wpa_supplicant"
-
 # Make Control_L + L in Firefox mean F6
-#bindsym Control+l exec "keybind.py"
+# bindsym Control+l exec "/home/andreas/.bin/keybind.py"
+
+# Start kdeconnect
+exec --no-startup-id /usr/lib/kdeconnectd
+
+# Set background
+exec --no-startup-id /home/andreas/.fehbg
+
+# Start NetworkManager applet
+exec --no-startup-id nm-applet
