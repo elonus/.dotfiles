@@ -170,8 +170,8 @@ bindsym Print "exec spectacle"
 # Start programs on i3 startup
 exec --no-startup-id i3-msg 'workspace 1; exec st screen -RD; sleep 4'
 exec --no-startup-id i3-msg 'workspace 2; exec st mosh -p 41232 muspelheim; sleep 4'
-exec --no-startup-id i3-msg 'workspace 3; exec palemoon'
-exec --no-startup-id i3-msg 'workspace 3; exec firefox'
+#exec --no-startup-id i3-msg 'workspace 3; exec palemoon'
+exec --no-startup-id i3-msg 'workspace 3; exec firefox-nightly'
 
 exec --no-startup-id redshift-gtk -l 60.2:10.52
 
