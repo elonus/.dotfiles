@@ -39,6 +39,7 @@ xbindkeys
 xinput disable 9
 setxkbmap -layout no -option compose:lctrl
 setxkbmap -layout no -option ctrl:nocaps
+setxkbmap -layout no -option shift:both_capslock
 xss-lock -- i3lock -k -B 5 --insidecolor=ffffffbf &
 autocutsel -fork &
 autocutsel -selection PRIMARY -fork -buttonup &
