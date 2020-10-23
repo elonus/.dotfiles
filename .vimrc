@@ -130,6 +130,7 @@ let g:tex_flavor = "latex"
 
 " Press esc to stop search highlight
 nnoremap <esc> :noh<return><esc>
+nnoremap <esc>^[ <esc>^[
 
 " Change the color scheme from default to elflord
 colorscheme elflord
