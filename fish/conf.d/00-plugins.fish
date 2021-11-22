@@ -1,0 +1,1 @@
+#set plugins vi-mode
