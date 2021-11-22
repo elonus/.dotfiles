@@ -32,15 +32,22 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-export EDITOR=/usr/bin/vim
-export BROWSER=/usr/bin/firefox-nightly
-export TERMINAL=/usr/bin/st
 xbindkeys
 xinput disable 9
-setxkbmap -layout no -option compose:lctrl
-setxkbmap -layout no -option ctrl:nocaps
-setxkbmap -layout no -option shift:both_capslock
-xss-lock -- i3lock -k -B 5 --insidecolor=ffffffbf &
+#setxkbmap -layout no
+#setxkbmap -layout no -option compose:lctrl
+#setxkbmap -layout no -option ctrl:nocaps
+#setxkbmap -layout no -option shift:both_capslock
+xss-lock -- i3lock -i ~/Pictures/arch-linux-wallpaper.png &
 autocutsel -fork &
 autocutsel -selection PRIMARY -fork -buttonup &
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+
+export EDITOR=/usr/bin/vim
+export BROWSER=/home/andreas/.bin/firefox-nightly
+export TERMINAL=/usr/bin/termite
+export XDG_DATA_DIRS=/home/andreas/.local/share:/usr/local/share:/usr/share
+export XDG_CONFIG_HOME=/home/andreas/.config
+export SSH_AUTH_SOCK
+
 exec i3
