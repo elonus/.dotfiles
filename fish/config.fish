@@ -1,6 +1,6 @@
 # Configure bobthefish prompt
 #set -g theme_newline_cursor yes
-set -g theme_newline_cursor no
+#set -g theme_newline_cursor no
 
 # Set vi-mode
 fish_vi_key_bindings
@@ -81,6 +81,22 @@ set -x LS_COLORS (dircolors ~/.dircolors | grep -o 'r.*:')
 
 #thefuck --alias | source
 
-function rsyncnetBackupHome
-	BORG_REMOTE_PATH="borg1" /urs/bin/borg create -x --exclude-caches --exclude '*.avi' --exclude '*.mkv' --exclude '*.mp4' --exclude '/home/andreas/.cache' --exclude '/home/andreas/.config/*/Cache' --exclude '/home/andreas/.config/chromium' rsyncnet:niflheimBackup::home-{now:%Y-%m-%d} /home
-end
+#function rsyncnetBackup
+#	BORG_REMOTE_PATH="borg1" /usr/bin/borg create -x --exclude-caches\
+#    --exclude '*.avi'\
+#    --exclude '*.mkv'\
+#    --exclude '*.mp4'\
+#    --exclude '/home/andreas/.cache'\
+#    --exclude '/home/andreas/.config/*/Cache'\
+#    --exclude '/home/andreas/.config/chromium' \
+#    #--exclude '/home/andreas/.local/Steam'\
+#    #--exclude '/home/andreas/.local/lutris'\
+#    --exclude '/home/andreas/.local/baloo'\
+#    rsyncnet:niflheimBackup::home-{now:%Y-%m-%d} /home
+#
+#	BORG_REMOTE_PATH="borg1" /usr/bin/borg create -x --exclude-caches\
+#    #--exclude /var/cache\
+#    --exclude /var/cache/pacman/*/*.pkg.tar.zst\
+#    --exclude /var/lib/aurbuild\
+#    rsyncnet:niflheimBackup::root-{now:%Y-%m-%d} /
+#end
