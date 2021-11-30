@@ -43,9 +43,11 @@ autocutsel -fork &
 autocutsel -selection PRIMARY -fork -buttonup &
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 
+xcape -t 150
+
 export EDITOR=/usr/bin/vim
 export BROWSER=/home/andreas/.bin/firefox-nightly
-export TERMINAL=/usr/bin/termite
+export TERMINAL=/usr/bin/alacritty
 export XDG_DATA_DIRS=/home/andreas/.local/share:/usr/local/share:/usr/share
 export XDG_CONFIG_HOME=/home/andreas/.config
 export SSH_AUTH_SOCK

@@ -54,7 +54,7 @@ function cp
 end
 
 # Make left ctrl escape when pressed and ctrl when holding it
-xcape -t 150
+#xcape -t 150
 
 # Emacs keybindings in vi mode
 function hybrid_bindings --description "Vi-style bindings that inherit emacs-style bindings in all modes"
