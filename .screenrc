@@ -1,7 +1,8 @@
 hardstatus alwayslastline '%{= G}[ %{G}%H %{g}][%= %{= w}%?%-Lw%?%{= R}%n*%f %t%?%{= R}(%u)%?%{= w}%+Lw%?%= %{= g}][ %{y}Load: %l %{g}][%{B}%Y-%m-%d %{W}%c:%s %{g}]'
-termcapinfo xterm* ti@:te@
+termcapinfo * ti@:te@
+#termcapinfo xterm*|alacritty ti@:te@
 
 escape ^Jj
 term screen-256color
 defutf8 on
-defscrollback 400
+defscrollback 10000
