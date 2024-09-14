@@ -180,7 +180,8 @@ bindsym Print "exec spectacle"
 workspace_layout tabbed
 
 # Start programs on i3 startup
-exec --no-startup-id i3-msg 'workspace 1; exec $TERMINAL -e screen'
+#exec --no-startup-id i3-msg 'workspace 1; exec $TERMINAL -e screen'
+exec --no-startup-id i3-msg 'workspace 1; exec $TERMINAL -e tmux'
 #exec --no-startup-id i3-msg 'workspace 1; exec $TERMINAL -e "screen -S main"'
 exec --no-startup-id i3-msg 'workspace 1; exec emacs'
 #exec --no-startup-id i3-msg 'workspace 2; exec $TERMINAL -e "mosh -p 41232 muspelheim"'
