@@ -139,3 +139,8 @@ colorscheme elflord
 set encoding=utf-8
 set fileencoding=utf-8
 
+" This makes typing Esc take effect more quickly.  Normally Vim waits a second
+" to see if the Esc is the start of an escape sequence.  If you have a very slow
+" remote connection, increase the number.  See 'ttimeout'.
+set ttimeout
+set ttimeoutlen=100
